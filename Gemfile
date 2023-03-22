@@ -1,21 +1,19 @@
-source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+source 'https://rubygems.org'
+git_source(:github) { |_repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.1"
+ruby '3.2.1'
 
-
-gem 'pg', '1.1'
+gem 'importmap-rails', '1.1.5'
+gem 'jbuilder', '2.11.5'
+gem 'pg', '1.4.6 '
 gem 'puma', '5.0'
+gem 'sprockets-rails', '3.4.2'
+gem 'stimulus-rails', '1.2.1'
+gem 'turbo-rails', '1.4.0'
 gem 'rails', '7.0.4'
-gem "sprockets-rails", '3.4.2'
-gem "importmap-rails", '1.1.5'
-gem "turbo-rails", '1.4.0'
-gem "stimulus-rails", '1.2.1'
-gem "jbuilder", '2.11.5'
 
 gem 'bootsnap', '1.16', require: false
 gem 'tzinfo-data', '1.2022', platforms: %i[mingw mswin x64_mingw jruby]
-
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -37,9 +35,9 @@ group :development, :test do
 end
 
 group :development do
-  gem "web-console"
+  gem 'web-console'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  # gem 'spring'
 end
 
 group :test do
