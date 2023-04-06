@@ -10,6 +10,7 @@ gem 'puma', '6.1.1'
 gem 'sprockets-rails', '3.4.2'
 gem 'stimulus-rails', '1.2.1'
 gem 'turbo-rails', '1.4.0'
+gem 'rack-cors', '2.0'
 gem 'rails', '7.0.4.3'
 
 gem 'bootsnap', '1.16', require: false
